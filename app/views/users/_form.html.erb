@@ -6,27 +6,32 @@
 		<% end %>
 	<% end %>
 	
-	<div>
+	<div class="form_list">
 		<%= f.label :fname, "First Name" %>
 		<%= f.text_field :fname %>
 	</div>	
-	<div>
+	<br>
+	<div class="form_list">
 		<%= f.label :lname, "Last Name" %>
 		<%= f.text_field :lname %>
 	</div>
-	<div>
+	<br>
+	<div class="form_list">
 		<%= f.label :email, "Email" %>
 		<%= f.email_field :email %>
 	</div>
-	<div>
+	<br>
+	<div class="form_list">
 		<%= f.label :password, "Password" %>
 		<%= f.password_field :password %>
 	</div>
-	<div>
+	<br>
+	<div class="form_list">
 		<%= f.label :password_confirmation, "Confirm Password" %>
 		<%= f.password_field :password_confirmation %>
 	</div>
-	<div>
+	<br>
+	<div class="form_list">
 		<%= f.submit "Sign Up" %>
 	</div>
 <% end %>

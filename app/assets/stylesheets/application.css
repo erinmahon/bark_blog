@@ -1,5 +1,6 @@
 body {
 	background-color: #8a8587;
+	font-family: helvetica;
 }
 #wrapper {
 	background-color: #ffffff;
@@ -7,9 +8,60 @@ body {
 	margin: 0 auto;
 	border: 5px solid #454243;
 }
-header {
-	height: 200px;
+#header {
+	height: 100px;
 	width: 900px;
 	margin: 0 auto;
 	background-color: #454243;
+	border: 5px solid #454243;
+}
+#footer {
+	clear: both;
+	height: 100px;
+	width: 0 auto;
+	background-color: #000000;
+}
+#logo {
+	float: left;
+}
+ul {
+}
+li {
+	float: right;
+	list-style-type: none;
+	text-transform: uppercase;
+	margin: 5px;
+	margin-top: 60px;
+}
+#sign_up_form {
+	width: 35%;
+	background-color: #e8e3d9;
+	float: left;
+	padding: 10px;
+}
+.form_list {
+	text-align: right;
+}
+#big_dogs {
+	float: right;
+}
+.form {
+	float: inline-block;
+	margin: 30px;
+	text-align: center;
+}
+#main {	
+	clear: both;
+	height: 100%;
+	width: 0 auto;
+}
+a {
+	font-size: 14x;
+}
+a:link, a:visited { 
+	color: #f79256;
+	text-decoration: none;
+}
+a:hover {
+	color: #e8e3d9;
 }
