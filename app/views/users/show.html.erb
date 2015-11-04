@@ -1,15 +1,15 @@
-<h1><%= @user.fname %> <%= @user.lname %></h1>
-<section>
-	<h3><%= @user.fname %>'s Info</h3>
-	<ul>
-		<li><%= @user.fname %> <%= @user.lname %></li>
-	</ul>
-</section>
-<section>
-	<div id="my_barks">
-		<% @user.posts.reverse.each do |post| %>
- 		 <p><%= post.body %></p>
- 		 <p><%= post.created_at %></p>
- 		<% end %>
+<div id="wrapper">
+	<img id="profile_photo" src="/assets/dog_face.png" height="250px">
+	<h1 id="user_name"><%= @user.fname %> <%= @user.lname %></h1>
+	<section>
+		<div id="my_barks">
+			<% @user.posts.reverse.each do |post| %>
+	 		 <p id="post_body"><%= post.body %></p>
+	 		 <p id="post_date"><%= post.created_at %></p>
+	 		<% end %>
+		</div>
+	</section>
+	<div id="footer">
+		<p id="copyright">&#169 2015 Bark. - All rights reserved.</p>
 	</div>
-</section>
+</div>

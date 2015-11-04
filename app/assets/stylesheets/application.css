@@ -17,9 +17,12 @@ body {
 }
 #footer {
 	clear: both;
-	height: 100px;
+	height: 75px;
 	width: 0 auto;
-	background-color: #000000;
+	background-color: #454243;
+	color: #f79256;
+	text-align: center;
+	padding-top: 25px;
 }
 #logo {
 	float: left;
@@ -32,18 +35,21 @@ li {
 	text-transform: uppercase;
 	margin: 5px;
 	margin-top: 60px;
+	font-size: 14px;
 }
 #sign_up_form {
 	width: 35%;
 	background-color: #e8e3d9;
 	float: left;
 	padding: 10px;
+	margin-bottom: 20px;
 }
 .form_list {
 	text-align: right;
 }
 #big_dogs {
 	float: right;
+	margin-right: 30px;
 }
 .form {
 	float: inline-block;
@@ -63,5 +69,111 @@ a:link, a:visited {
 	text-decoration: none;
 }
 a:hover {
-	color: #e8e3d9;
+	color: #ffffff;
+}
+.button input {
+	margin: 2px 4px 0px 0px;
+	border: 2px solid #8a8587;
+	background-color: #c2dde5;
+	font-size: 12px;
+}
+#check_out_users {
+	padding-top: 10px;
+}
+#profile_photo {
+	margin: 20px;
+	float: left;
+}
+#my_barks {
+	border: 3px solid #454243;
+	float: right;
+	width: 65%;
+	margin-right: 30px;
+	margin-bottom: 30px;
+	background-color: #e8e3d9;
+	padding: 5px 10px;
+}
+#user_info {
+	width: 30%;
+	border: 2px solid red;
+	float: left;
+}
+#user_name {
+	background-color: #c2dde5;
+	color: #8a8587;
+	padding: 4px 0px;
+}
+#hello {
+	text-transform: none;
+	font-style: italic;
+	margin-right: 10px;
+	font-size: 20px;
+	color: #ffffff;
+}
+#post_body {
+	font-weight: bold;
+	color: #454243;
+}
+#post_date {
+	font-style: italic;
+	font-size: 14px;
+	color: #8a8587;
+}
+.dog_bark {
+	float: left;
+	margin-left: 200px;
+}
+#text_area .input {
+	background-color: #c2dde5;
+	width: 40%;
+}
+#welcome {
+	text-align: center;
+}
+.icon {
+	float: right;
+	margin: 45px 5px 0px 10px;
+	background-color: #8a8587;
+	padding: 4px 4px 0px 4px;
+}
+#ready_to_bark {
+	text-align: center;
+}
+#post_body {
+	width: 500px;
+	height: auto;
+	font-size: 14px;
+}
+#notice {
+	background-color: yellow;
+	position: fixed;
+	left: 40%;
+}
+#alert {
+	background-color: red;
+	position: fixed;
+}
+#dogs_barking {
+	float: left
+	width: 30%;
+	margin: 0px 0px 30px 40px;
+}
+#find_friends {
+	float: left;
+	width: 60%;
+	text-align: center;
+}
+#users_list {
+	background-color: #e8e3d9;
+	width: 30%;
+	font-weight: bold;
+	margin: 20px;
+	text-align: center;
+	float: left;
+}
+#bark_users {
+	background-color: #c2dde5;
+	color: #454243;
+	text-align: center;
+	padding: 4px 0px;
 }

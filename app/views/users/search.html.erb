@@ -1,0 +1,12 @@
+<div id="wrapper">
+    <div class="users_list">
+  	  <h4>Possible Users</h4>
+	  <% @users.each do |user| %>
+	    <%= link_to (user.fname + " " + user.lname), (user_path(user.id)) %>
+		<br><br>
+	  <% end %>
+	</div>
+	<div id="footer">
+		<p id="copyright">&#169 2015 Bark. - All rights reserved.</p>
+	</div>
+</div>

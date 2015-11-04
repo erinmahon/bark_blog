@@ -1,6 +1,14 @@
-<h1>Edit User</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Show', @user %> |
-<%= link_to 'Back', users_path %>
+<div id="wrapper">
+	<div class="form">
+		<h1>Edit Info</h1>
+		<h4>Need to update your info? Do it easily here!</h4>
+		<div id="sign_up_form"><%= render 'form' %>
+		  <%= link_to 'Profile', @user %> |
+		  <%= link_to 'Users', users_path %>
+		</div>
+	</div>
+	<img class="dog_bark" src="/assets/dog_bark.jpg" width="50%">
+	<div id="footer">
+		<p id="copyright">&#169 2015 Bark. - All rights reserved.</p>
+	</div>
+</div>

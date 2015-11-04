@@ -1,15 +1,23 @@
-<h1>New Bark!</h1>
-<%= form_for @post do |f| %>
-	<% if @post.errors.any? %>
-		<% @post.errors.full_messages.each do |error| %>
-			<p><%= error %></p>	
-		<% end %>
-	<% end %>
-
-	<div>
-	  <%= f.text_area :body, placeholder: "Write your bark here!" %>
-	</div>	
-	<div>
-	  <%= f.submit "Bark!" %>
-	</div>	
-<% end %>
+<div id="wrapper">
+	<div id="ready_to_bark">
+		<h1>New Bark!</h1>
+		<h4>Ready to bark? Share your latest update now!</h4>
+		<%= form_for @post do |f| %>
+			<% if @post.errors.any? %>
+				<% @post.errors.full_messages.each do |error| %>
+					<p><%= error %></p>	
+				<% end %>
+			<% end %>
+		<div id="text_area"><%= f.text_area :body, placeholder: "Write your bark here!" %></div>	
+		<div class="button"><%= f.submit "Bark!" %></div>
+	    <% end %>
+	</div>
+	<div id="dogs_barking">
+		<img src="/assets/big_dog_bark.jpg" height="400px">
+		<img src="/assets/small_dog_bark.jpg" width="200px">
+		<img src="/assets/shiba_bark.jpg" width="200px">
+	</div>
+	<div id="footer">
+		<p id="copyright">&#169 2015 Bark. - All rights reserved.</p>
+	</div>
+</div>

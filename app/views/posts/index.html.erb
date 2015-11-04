@@ -1,5 +1,10 @@
-<% Post.all.reverse.each do |post| %>
-  <p><a href="/users/<%= post.user.id %>"><%= post.user.fname + " " + post.user.lname %></a>:</p>
-  <p><%= post.body %></p>
-  <p><%= post.created_at.strftime('%m-%d-%Y %I:%M:%S %P') %></p>
- <% end %>
+<div id="wrapper">
+    <% Post.all.reverse.each do |post| %>
+      <p><a href="/users/<%= post.user.id %>"><%= post.user.fname + " " + post.user.lname %></a>:</p>
+      <p><%= post.body %></p>
+      <p><%= post.created_at.strftime('%m-%d-%Y %I:%M:%S %P') %></p>
+    <% end %>
+    <div id="footer">
+   		<p id="copyright">&#169 2015 Bark. - All rights reserved.</p>
+    </div>
+</div>

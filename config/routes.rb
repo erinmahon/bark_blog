@@ -11,5 +11,7 @@ Rails.application.routes.draw do
   get '/profile/edit' => 'users#edit', as: 'edit_profile'
   resources :posts
   root 'users#new'
+
+   post '/search' => 'users#search'
 end
 
