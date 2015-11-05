@@ -1,14 +1,20 @@
-<h1>Log In</h1>
-<%= form_tag '/login', method: :post do %>
-	<div>
-	  <%= label_tag :email %>
-	  <%= email_field_tag :email %>
+<div id="wrapper">
+	<h1>Log In</h1>
+	<h4>Weclome Back! Sign in below!</h4>
+	<img id="crazy" src="/assets/crazy_puppy.png" width="300px">
+	<div id="login_form" class="form">
+	  <%= form_tag '/login', method: :post do %>
+        <%= label_tag :email %>
+		<%= email_field_tag :email %>
+		<br><br>
+		<%= label_tag :password %>
+		<%= password_field_tag :password %>
+		<br><br>
+		<div class="button"><%= submit_tag "Log In" %></div>
+	  <% end %>
 	</div>
-	<div>
-	  <%= label_tag :password %>
-	  <%= password_field_tag :password %>
+	<img id="adam" src="/assets/adam_dog.png" width="20%">
+	<div id="footer">
+		<p id="copyright">&#169 2015 Bark. - All rights reserved.</p>
 	</div>
-	<div>
-	  <%= submit_tag "Log In" %>
-	</div>
-<% end %>
+</div>

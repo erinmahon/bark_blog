@@ -53,7 +53,7 @@ li {
 }
 .form {
 	float: inline-block;
-	margin: 30px;
+	margin: 30px 0px 30px 50px;
 	text-align: center;
 }
 #main {	
@@ -148,15 +148,18 @@ a:hover {
 	background-color: yellow;
 	position: fixed;
 	left: 40%;
+	opacity: 0.6;
 }
 #alert {
 	background-color: red;
 	position: fixed;
+	left: 40%;
+	opacity: 0.6;
 }
 #dogs_barking {
 	float: left
 	width: 30%;
-	margin: 0px 0px 30px 40px;
+	margin: 0px 0px 30px 70px;
 }
 #find_friends {
 	float: left;
@@ -176,4 +179,66 @@ a:hover {
 	color: #454243;
 	text-align: center;
 	padding: 4px 0px;
+}
+h1, h4 {
+	text-align: center;
+}
+#login_form {
+	width: 25%;
+	background-color: #e8e3d9;
+	float: left;
+	padding: 10px;
+	margin-bottom: 20px;
+	text-align: right;
+}
+#bark_feed {
+	border: 2px solid black;
+	width: 60%;
+	margin-left: 20%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #e8e3d9;
+	padding: 0px 10px;
+}
+#user_name_feed {
+	font-weight: bold;
+	font-size: 16px;
+	padding: 4px 0px 4px 4px;
+	background-color: #c2dde5;
+	color: #8a8587;
+}
+#user_name_find {
+	font-weight: bold;
+	font-size: 16px;
+	padding-left: 4px;
+	color: #8a8587;
+	text-align: center;
+	background-color: #c2dde5;
+	padding: 4px;
+	width: 20%;
+	margin-left: 40%;
+}
+#find {
+	float: left;
+	width: 40%;
+	margin-top: 200px;
+}
+#search {
+	float: left;
+}
+#adam {
+	float: right;
+}
+#crazy {
+	float: left;
+	margin-top: 83px;
+}
+#golden {
+	float: right;
+	margin: 25px 35px 0px 0px;
+}
+#search_bar {
+	width: 25%;
+	margin: 20px 0px 0px 40px;
+	text-align: center;
 }

@@ -1,10 +1,12 @@
 <div id="wrapper">
     <div class="users_list">
-  	  <h4>Possible Users</h4>
+  	  <h1>Possible Users</h1>
 	  <% @users.each do |user| %>
-	    <%= link_to (user.fname + " " + user.lname), (user_path(user.id)) %>
-		<br><br>
+	    <div id="user_name_find"><%= link_to (user.fname + " " + user.lname), (user_path(user.id)) %></div>
+		<br>
 	  <% end %>
+	  <img id="search" src="/assets/dog_find.jpg">
+	  <h4 id="find">Find who you're looking for?<br> Click their name to view their page!</h4>
 	</div>
 	<div id="footer">
 		<p id="copyright">&#169 2015 Bark. - All rights reserved.</p>
