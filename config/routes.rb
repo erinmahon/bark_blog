@@ -12,6 +12,8 @@ Rails.application.routes.draw do
   resources :posts
   root 'users#new'
 
-   post '/search' => 'users#search'
+  post '/search' => 'users#search'
+
+  resources :comments
 end
 

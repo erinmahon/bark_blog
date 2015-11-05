@@ -1,0 +1,5 @@
+<%= form_for Comment.new do |f| %>
+  <div id="text_area"><%= f.text_area :body, placeholder: "Write your comment here!" %></div>	
+  <div><%= f.hidden_field :post_id, "#{post.id}" %></div>
+  <div class="button"><%= f.submit "Comment!" %></div>
+<% end %>

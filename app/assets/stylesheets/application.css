@@ -149,16 +149,21 @@ a:hover {
 	position: fixed;
 	left: 40%;
 	opacity: 0.6;
+	width: 20%;
+	text-align: center;
+
 }
 #alert {
 	background-color: red;
 	position: fixed;
-	left: 40%;
+	left: 25%;
 	opacity: 0.6;
+	width: 50%;
+	text-align: center;
 }
 #dogs_barking {
-	float: left
-	width: 30%;
+	float: left;
+	width: 85%;
 	margin: 0px 0px 30px 70px;
 }
 #find_friends {
@@ -198,7 +203,7 @@ h1, h4 {
 	margin-top: 20px;
 	margin-bottom: 20px;
 	background-color: #e8e3d9;
-	padding: 0px 10px;
+	padding: 0px 10px 10px 10px;
 }
 #user_name_feed {
 	font-weight: bold;
@@ -241,4 +246,28 @@ h1, h4 {
 	width: 25%;
 	margin: 20px 0px 0px 40px;
 	text-align: center;
+}
+#user_name_comment {
+	font-weight: bold;
+	font-size: 14px;
+	background-color: #ffffff;
+	padding: 4px;
+	color: #8a8587;
+}
+#post_comment {
+	background-color: #c2dde5;
+	width: 70%;
+	margin-left: 15%;
+}
+#comment_body {
+	font-weight: bold;
+	color: #454243;
+	padding-left: 4px;
+	font-size: 12px;
+}
+#enter_comment {
+	margin-top: 10px;
+}
+.field_with_errors {
+	display: inline;
 }

@@ -1,12 +1,27 @@
 <div id="wrapper">
-    <div id="bark_feed">
-      <% Post.all.reverse.each do |post| %>
-        <p id="user_name_feed"><a href="/users/<%= post.user.id %>"><%= post.user.fname + " " + post.user.lname %></a>:</p>
-        <p id="post_body"><%= post.body %></p>
-        <p id="post_date"><%= post.created_at.strftime('%m-%d-%Y %I:%M:%S %P') %></p>
+  <section id="bark_feed">
+    <% Post.all.reverse.each do |post| %>
+      <p id="user_name_feed"><a href="/users/<%= post.user.id %>"><%= post.user.fname + " " + post.user.lname %></a>:</p>
+      <p id="post_body"><%= post.body %></p>
+      <p id="post_date"><%= post.created_at.strftime('%m-%d-%Y %I:%M:%S %P') %></p>
+      <div id="post_comment">
+        <% post.comments.each do |comment| %>
+          <p id="user_name_comment"><a href="/users/<%= comment.user.id %>"><%= comment.user.fname + " " + comment.user.lname %></a>:</p>
+          <p id="comment_body"><%= comment.body %></p>
+          <p id="post_date"><%= comment.created_at.strftime('%m-%d-%Y %I:%M:%S %P') %></p>
+        <% end %>
+      </div>
+      <div id="enter_comment">
+        <%= form_for Comment.new do |f| %>
+           <div id="text_area"><%= f.text_area :body, placeholder: "Write your comment here!" %></div> 
+           <div><%= f.hidden_field :post_id, value: post.id %></div>
+           <div class="button"><%= f.submit "Comment!" %></div>
+        <% end %>
       <% end %>
-    </div>
-    <div id="footer">
-   		<p id="copyright">&#169 2015 Bark. - All rights reserved.</p>
-    </div>
+      </div>
+  </section>
+  <div id="footer">
+  <p id="copyright">&#169 2015 Bark. - All rights reserved.</p>
+  </div>
 </div>
+

@@ -18,6 +18,12 @@ class UsersController < ApplicationController
       session[:user_id] = @user.id
   		redirect_to @user, notice: "New account created!"
   	else
+      flash[:alert] =""
+      if @user.errors.any? 
+        @user.errors.full_messages.each do | error |
+          flash[:alert] += error + " "
+        end 
+      end 
   		render :new
   	end
   end

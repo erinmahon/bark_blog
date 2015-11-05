@@ -16,6 +16,6 @@
 //= require_tree .
 
 $("#alert").show();
-setTimeout(function() { $("#alert").hide(); }, 1000);
+setTimeout(function() { $("#alert").hide(); }, 3000);
 $("#notice").show();
-setTimeout(function() { $("#notice").hide(); }, 1000);
+setTimeout(function() { $("#notice").hide(); }, 3000);
